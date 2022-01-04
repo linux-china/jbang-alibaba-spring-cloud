@@ -1,0 +1,16 @@
+{
+  "aliases": {
+    "NacosService": {
+      "script-ref": "nacos-service/src/demo/NacosServiceApp.java",
+      "description": "Nacos Service"
+    },
+    "NacosClient": {
+      "script-ref": "nacos-client/src/demo/NacosClientApp.java",
+      "description": "Nacos Client"
+    },
+    "rocketmq-consumer": {
+      "script-ref": "rocketmq-consumer/src/demo/RocketmqConsumerApp.java",
+      "description": "RocketMQ Consumer"
+    }
+  }
+}
