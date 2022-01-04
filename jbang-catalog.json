@@ -8,7 +8,7 @@
       "script-ref": "nacos-client/src/demo/NacosClientApp.java",
       "description": "Nacos Client"
     },
-    "rocketmq-consumer": {
+    "RocketmqConsumer": {
       "script-ref": "rocketmq-consumer/src/demo/RocketmqConsumerApp.java",
       "description": "RocketMQ Consumer"
     }
