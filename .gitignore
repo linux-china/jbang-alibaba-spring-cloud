@@ -134,3 +134,6 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/java,jetbrains
 
+.idea/
+!.idea/modules.xml
+!.idea/*.iml
