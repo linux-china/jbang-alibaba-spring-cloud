@@ -11,6 +11,10 @@
     "RocketmqConsumer": {
       "script-ref": "rocketmq-consumer/src/demo/RocketmqConsumerApp.java",
       "description": "RocketMQ Consumer"
+    },
+    "RocketmqSender": {
+      "script-ref": "rocketmq-sender/src/RocketmqSender.java",
+      "description": "RocketMQ Sender"
     }
   }
 }
