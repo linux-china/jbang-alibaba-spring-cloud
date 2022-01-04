@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/jbang-alibaba-spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/jbang-alibaba-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-client/nacos-client.iml" filepath="$PROJECT_DIR$/nacos-client/nacos-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos-service/nacos-service.iml" filepath="$PROJECT_DIR$/nacos-service/nacos-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq-consumer/rocketmq-consumer.iml" filepath="$PROJECT_DIR$/rocketmq-consumer/rocketmq-consumer.iml" />
+    </modules>
+  </component>
+</project>
