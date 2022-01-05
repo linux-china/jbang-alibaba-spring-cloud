@@ -20,7 +20,8 @@
   "templates": {
     "RocketmqConsumer": {
       "file-refs": {
-        "demo/{basename}.java": "templates/RocketmqConsumer.java.qute"
+        "demo/{basename}.java": "templates/RocketmqConsumer.java.qute",
+        "application.properties": "rocketmq-application.properties.qute"
       },
       "description": "Basic template for RocketMQ Consumer"
     }
