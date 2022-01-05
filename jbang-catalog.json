@@ -16,5 +16,13 @@
       "script-ref": "rocketmq-sender/src/RocketmqSender.java",
       "description": "RocketMQ Sender"
     }
+  },
+  "templates": {
+    "RocketmqConsumer": {
+      "file-refs": {
+        "demo/{basename}.java": "RocketmqConsumer.java.qute"
+      },
+      "description": "Basic template for RocketMQ Consumer"
+    }
   }
 }
