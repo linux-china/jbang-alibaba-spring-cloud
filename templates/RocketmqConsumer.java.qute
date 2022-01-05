@@ -5,7 +5,7 @@
 //DEPS com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1@pom
 //DEPS org.springframework.boot:spring-boot-starter-webflux
 //DEPS com.alibaba.cloud:spring-cloud-starter-stream-rocketmq
-//FILES ../../resources/application.properties
+//FILES ../application.properties
 
 package demo;
 
