@@ -23,7 +23,7 @@ Please install and start RocketMQ first: https://rocketmq.apache.org/docs/quick-
 
 # Apache Dubbo
 
-Please install and start ZooKeeper first: https://zookeeper.apache.org/doc/r3.4.14/zookeeperStarted.html
+JBang Dubbo demo uses multicast for registry, Please use ZooKeeper for production env.
 
 * Dubbo Service Provider: `jbang DubboServiceApp@linux-china/jbang-alibaba-spring-cloud`
 * Dubbo Service Consumer: `jbang DubboClientApp@linux-china/jbang-alibaba-spring-cloud`
