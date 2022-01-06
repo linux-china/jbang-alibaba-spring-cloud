@@ -15,6 +15,14 @@
     "RocketmqSender": {
       "script-ref": "rocketmq-sender/src/RocketmqSender.java",
       "description": "RocketMQ Sender"
+    },
+    "DubboServiceApp": {
+      "script-ref": "dubbo-demo/src/DubboServiceApp.java",
+      "description": "Dubbo Service Provider"
+    },
+    "DubboClientApp": {
+      "script-ref": "dubbo-demo/src/DubboClientApp.java",
+      "description": "Dubbo Service Consumer"
     }
   },
   "templates": {
