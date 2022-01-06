@@ -7,3 +7,9 @@ services:
       - MODE=standalone
     ports:
       - "8848:8848"
+  zookeeper:
+    image: zookeeper:3.4.14
+    ports:
+      - "2181:2181"
+      - "2888:2888"
+      - "3888:3888"
