@@ -12,10 +12,11 @@ import org.apache.dubbo.config.RegistryConfig;
 
 public class DubboClientApp {
     public static void main(String[] args) throws Exception {
-        String zookeeperHost = System.getProperty("zookeeper.address", "127.0.0.1");
+        //String registryURL = "zookeeper://127.0.0.1:2181";  // production
+        String registryURL = "multicast://224.5.6.7:1234";
         ReferenceConfig<GreetingsService> reference = new ReferenceConfig<>();
         reference.setApplication(new ApplicationConfig("greeting-service-consumer"));
-        reference.setRegistry(new RegistryConfig("zookeeper://" + zookeeperHost + ":2181"));
+        reference.setRegistry(new RegistryConfig(registryURL));
         reference.setInterface(GreetingsService.class);
         GreetingsService service = reference.get();
         String message = service.sayHi("Dubbo");

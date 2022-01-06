@@ -14,10 +14,11 @@ import java.util.concurrent.CountDownLatch;
 
 public class DubboServiceApp {
     public static void main(String[] args) throws Exception {
-        String zookeeperHost = System.getProperty("zookeeper.address", "127.0.0.1");
+        //String registryURL = "zookeeper://127.0.0.1:2181";  // production
+        String registryURL = "multicast://224.5.6.7:1234";
         ServiceConfig<GreetingsService> service = new ServiceConfig<>();
         service.setApplication(new ApplicationConfig("greeting-service-provider"));
-        service.setRegistry(new RegistryConfig("zookeeper://" + zookeeperHost + ":2181"));
+        service.setRegistry(new RegistryConfig(registryURL));
         service.setInterface(GreetingsService.class);
         service.setRef(new GreetingsServiceImpl());
         service.export();
