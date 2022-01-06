@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-demo/dubbo-demo.iml" filepath="$PROJECT_DIR$/dubbo-demo/dubbo-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jbang-alibaba-spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/jbang-alibaba-spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos-client/nacos-client.iml" filepath="$PROJECT_DIR$/nacos-client/nacos-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos-service/nacos-service.iml" filepath="$PROJECT_DIR$/nacos-service/nacos-service.iml" />
