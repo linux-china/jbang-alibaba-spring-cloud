@@ -19,13 +19,13 @@ public class DubboDirectClientApp {
         ApplicationModel.defaultModel().getApplicationConfigManager().setApplication(new ApplicationConfig("ConsumerTest"));
         ReferenceConfig<GenericService> reference = new ReferenceConfig<>();
         try {
-            final URI uri = URI.create("dubbo://127.0.0.1:20880/GreetingsService?methods=sayHi(java.lang.String)");
+            final URI uri = URI.create("dubbo://127.0.0.1:20880/GreetingsService?method=findNick(java.lang.Integer)");
             reference.setUrl(uri.toString());
             reference.setInterface(uri.getPath().substring(1));
             RpcContext.getClientAttachment().setAttachment("generic", "gson");
             reference.setGeneric("gson");
             reference.setCheck(false);
-            Object responseObject = reference.get().$invoke("sayHi", new String[]{"java.lang.String"}, new Object[]{"Jackie"});
+            Object responseObject = reference.get().$invoke("findNick", new String[]{"java.lang.Integer"}, new Object[]{"null"});
             System.out.println(responseObject.toString());
         } catch (Throwable ex) {
             ex.printStackTrace();
