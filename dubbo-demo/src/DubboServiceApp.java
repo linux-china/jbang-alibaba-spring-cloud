@@ -11,6 +11,10 @@ import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.rpc.model.ApplicationModel;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 
 public class DubboServiceApp {
@@ -32,5 +36,28 @@ public class DubboServiceApp {
         public String sayHi(String name) {
             return "hi, " + name;
         }
+
+        @Override
+        public String findNick(Integer id) {
+            return "nick:" + id;
+        }
+
+        @Override
+        public List<Map<String, String>> statistics() {
+            List<Map<String, String>> statistics = new ArrayList<>();
+            statistics.add(Collections.singletonMap("abc", "1234"));
+            return statistics;
+        }
+
+        @Override
+        public User info(String name) {
+            return new User(1, name);
+        }
+
+        @Override
+        public String exceptionCall(String name) throws Exception {
+            throw new Exception("Hi");
+        }
     }
+
 }
