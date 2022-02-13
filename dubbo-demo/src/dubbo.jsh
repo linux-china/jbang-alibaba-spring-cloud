@@ -12,13 +12,20 @@ import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.rpc.model.ApplicationModel;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import user.GreetingsService;
 
     public class Dubbo {
         String registryURL = "multicast://224.5.6.7:1234";
 
         public Dubbo() {
-            ApplicationModel.defaultModel().getApplicationConfigManager().setApplication(new ApplicationConfig("greeting-service-consumer"));
+            BasicConfigurator.configure();
+            Logger.getRootLogger().setLevel(Level.ERROR);
+            final ApplicationConfig applicationConfig = new ApplicationConfig("greeting-service-consumer");
+            applicationConfig.setQosEnable(false);
+            ApplicationModel.defaultModel().getApplicationConfigManager().setApplication(applicationConfig);
         }
 
         public GreetingsService greetingsService() {
