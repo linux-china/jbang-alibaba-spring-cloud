@@ -10,6 +10,9 @@ import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.rpc.model.ApplicationModel;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import user.GreetingsService;
 
 import java.util.ArrayList;
@@ -20,7 +23,7 @@ import java.util.concurrent.CountDownLatch;
 
 public class DubboServiceApp {
     public static void main(String[] args) throws Exception {
-        ApplicationModel.defaultModel().getApplicationConfigManager().setApplication(new ApplicationConfig("greeting-service-provider"));
+        initDubbo("greeting-service-provider");
         //String registryURL = "zookeeper://127.0.0.1:2181";  // production
         String registryURL = "multicast://224.5.6.7:1234";
         ServiceConfig<GreetingsService> service = new ServiceConfig<>();
@@ -30,6 +33,14 @@ public class DubboServiceApp {
         service.export();
         System.out.println("Dubbo service started");
         new CountDownLatch(1).await();
+    }
+
+    public static void initDubbo(String appName) {
+        BasicConfigurator.configure();
+        Logger.getRootLogger().setLevel(Level.ERROR);
+        final ApplicationConfig appConfig = new ApplicationConfig(appName);
+        appConfig.setQosEnable(false);
+        ApplicationModel.defaultModel().getApplicationConfigManager().setApplication(appConfig);
     }
 
     public static class GreetingsServiceImpl implements GreetingsService {
