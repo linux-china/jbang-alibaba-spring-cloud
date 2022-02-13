@@ -4,12 +4,13 @@
 //DEPS org.apache.dubbo:dubbo:3.0.5
 //DEPS org.apache.curator:curator-x-discovery
 //DEPS org.apache.zookeeper:zookeeper
-//SOURCES GreetingsService.java
+//SOURCES user/GreetingsService.java
 
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.rpc.model.ApplicationModel;
+import user.GreetingsService;
 
 import java.util.ArrayList;
 import java.util.Collections;
