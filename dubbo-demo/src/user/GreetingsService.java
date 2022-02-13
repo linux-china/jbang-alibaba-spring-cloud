@@ -1,3 +1,7 @@
+package user;
+
+//GAV com.example:greetings-service:1.0.0-SNAPSHOT
+
 import java.util.List;
 import java.util.Map;
 
