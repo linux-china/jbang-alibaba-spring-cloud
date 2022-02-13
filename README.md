@@ -27,6 +27,11 @@ JBang Dubbo demo uses multicast for registry, Please use ZooKeeper for productio
 
 * Dubbo Service Provider: `jbang DubboServiceApp@linux-china/jbang-alibaba-spring-cloud`
 * Dubbo Service Consumer: `jbang DubboClientApp@linux-china/jbang-alibaba-spring-cloud`
+                           
+Run dubbo.jsh to test Dubbo Services:
+
+* Install interface first: `jbang export mavenrepo --force dubbo-demo/src/user/GreetingsService.java`
+* Execute dubbo.jsh with interactive mode:  `jbang --interactive dubbo-demo/src/dubbo.jsh` 
 
 # Templates
 
