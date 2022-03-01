@@ -1,8 +1,8 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //JAVA 8
-//DEPS org.springframework.boot:spring-boot-dependencies:2.5.10@pom
-//DEPS org.springframework.cloud:spring-cloud-dependencies:2020.0.5@pom
-//DEPS com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1@pom
+//DEPS org.springframework.boot:spring-boot-dependencies:2.6.4@pom
+//DEPS org.springframework.cloud:spring-cloud-dependencies:2021.0.1@pom
+//DEPS com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.0.1.0@pom
 //DEPS org.springframework.boot:spring-boot-starter-webflux
 //DEPS com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery
 //DEPS org.springframework.cloud:spring-cloud-starter-loadbalancer
