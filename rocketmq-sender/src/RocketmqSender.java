@@ -1,6 +1,6 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //JAVA 8
-//DEPS org.apache.rocketmq:rocketmq-client:4.9.2
+//DEPS org.apache.rocketmq:rocketmq-client:4.9.3
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
