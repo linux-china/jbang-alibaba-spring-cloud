@@ -1,7 +1,7 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //JAVA 8
-//DEPS org.apache.dubbo:dubbo-dependencies-bom:3.0.7@pom
-//DEPS org.apache.dubbo:dubbo:3.0.7
+//DEPS org.apache.dubbo:dubbo-dependencies-bom:3.0.8@pom
+//DEPS org.apache.dubbo:dubbo:3.0.8
 //DEPS org.apache.curator:curator-x-discovery
 //DEPS org.apache.zookeeper:zookeeper
 //SOURCES user/GreetingsService.java

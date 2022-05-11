@@ -46,6 +46,26 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar!/" />
         </CLASSES>
         <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/dubbo-3.0.5-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.ideaLibSources/log4j-1.2.16-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="dubbo-demo-jbang">
+        <CLASSES>
+          <root url="jar://[jbang] [ERROR] Found 1 problems while building POM model from /var/folders/fc/2bmlvpc166qbp2jc5d610jw00000gn/T/jbang7309430461323362366.xml&#10;1/ [ERROR] Non-resolvable import POM!/" />
+          <root url="jar://Failed to resolve POM for org.apache.dubbo!/" />
+          <root url="jar://dubbo-dependencies-bom!/" />
+          <root url="jar://3.0.8 due to Could not find artifact org.apache.dubbo!/" />
+          <root url="jar://dubbo-dependencies-bom!/" />
+          <root url="jar://pom!/" />
+          <root url="jar://3.0.8 in mavencentral (https!/" />
+          <root url="jar://dependency-pom!/" />
+          <root url="jar://1.0-SNAPSHOT, /var/folders/fc/2bmlvpc166qbp2jc5d610jw00000gn/T/jbang7309430461323362366.xml!/" />
+        </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
